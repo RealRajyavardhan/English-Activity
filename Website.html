@@ -1,0 +1,199 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunachal Journeys</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a24879a822.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <!-- Header -->
+    <header class="navigation d-flex justify-content-between align-items-center px-4 py-3">
+        <div class="header-brand d-flex align-items-center">
+            <img src="logo.png" alt="Arunachal Journeys Logo" class="logo">
+            <h1 class="text-warning">Arunachal Journeys</h1>
+        </div>
+        <nav>
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="mx-3"><a href="#about" class="navigation-link">About</a></li>
+                <li class="mx-3"><a href="#tours" class="navigation-link">Tours</a></li>
+                <li class="mx-3"><a href="#gallery" class="navigation-link">Gallery</a></li>
+                <li class="mx-3"><a href="#reservation" class="navigation-link">Reservations</a></li>
+                <li class="mx-3"><a href="#contact" class="navigation-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="hero-content">
+            <h2 class="display-4 text-warning">Explore the Hidden Paradise of Arunachal Pradesh</h2>
+            <p class="lead text-light">Adventure, culture, and serenity await you.</p>
+            <a href="#reservation" class="btn btn-warning btn-lg mt-3">Book Your Journey</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="main-container text-center">
+        <h2 class="m-heading text-warning">About Us</h2>
+        <p>
+            Welcome to <strong>Arunachal Journeys</strong> – your trusted travel partner in the mystical land of
+            Arunachal Pradesh.
+            From snow-capped mountains to serene monasteries, we curate unforgettable experiences for adventurers,
+            families, and explorers.
+        </p>
+    </section>
+
+    <!-- Tours -->
+    <section id="tours" class="main-container">
+        <h2 class="m-heading text-warning text-center">Our Tours</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card special-card p-3">
+                    <img src="https://cultureandheritage.org/wp-content/uploads/2025/05/image-61.png"
+                        class="card-img-top" alt="Tawang Monastery">
+                    <h3 class="mt-3">Tawang Monastery Tour</h3>
+                    <p>Discover the largest monastery in India and immerse yourself in Tibetan culture.</p>
+                    <a href="#reservation" class="btn btn-warning">Book Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card special-card p-3">
+                    <img src="https://holidays.tripfactory.com/blogs/wp-content/uploads/sites/6/2024/12/Ziro-Valley.webp" class="card-img-top"
+                        alt="Ziro Valley">
+                    <h3 class="mt-3">Ziro Valley Trek</h3>
+                    <p>Walk through lush green valleys and experience the Apatani tribal culture.</p>
+                    <a href="#reservation" class="btn btn-warning">Book Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card special-card p-3">
+                    <img src="https://thetravelshots.com/wp-content/uploads/2023/06/Guide-to-Sela-Pass.jpg" class="card-img-top"
+                        alt="Sela Pass">
+                    <h3 class="mt-3">Sela Pass Adventure</h3>
+                    <p>Drive through breathtaking mountain passes and witness stunning alpine lakes.</p>
+                    <a href="#reservation" class="btn btn-warning">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="main-container text-center">
+        <h2 class="m-heading text-warning">Gallery</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Landscape_of_Arunachal_Pradesh.jpg/640px-Landscape_of_Arunachal_Pradesh.jpg"
+                    class="img-fluid rounded" alt="Landscape"></div>
+            <div class="col-md-4 mb-3"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lohit_river%2C_Arunachal_Pradesh%2C_India.jpg/640px-Lohit_river%2C_Arunachal_Pradesh%2C_India.jpg"
+                    class="img-fluid rounded" alt="River"></div>
+            <div class="col-md-4 mb-3"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SaurabhSawant_EvergreenForestTreeFelling_ArunachalPradesh_India_IMG_5967.jpg/640px-SaurabhSawant_EvergreenForestTreeFelling_ArunachalPradesh_India_IMG_5967.jpg"
+                    class="img-fluid rounded" alt="Forest"></div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="main-container">
+        <h2 class="m-heading text-warning text-center">Make a Reservation</h2>
+        <form class="reservation-form mt-4 mx-auto" id="reservationForm" style="max-width:600px;">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="tour">Select Tour</label>
+                <select class="form-control" id="tour">
+                    <option>Tawang Monastery Tour</option>
+                    <option>Ziro Valley Trek</option>
+                    <option>Sela Pass Adventure</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <button type="submit" class="btn btn-warning btn-block">Submit Reservation</button>
+        </form>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="main-container text-center">
+        <h2 class="m-heading text-warning">What Our Travelers Say</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="media_link p-3">
+                    <p>"An unforgettable experience! Arunachal Journeys made our trip magical." – Priya</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media_link p-3">
+                    <p>"The guides were knowledgeable and friendly. Highly recommend!" – Arjun</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media_link p-3">
+                    <p>"Breathtaking views and seamless service. Will book again." – Meera</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="main-container text-center">
+        <h2 class="m-heading text-warning">Contact Us</h2>
+        <p><i class="fas fa-envelope"></i> info@arunachaljourneys.com</p>
+        <p><i class="fas fa-phone"></i> +91-8448663586</p>
+        <p><i class="fas fa-map-marker-alt"></i> Itanagar, Arunachal Pradesh, India</p>
+        <div class="embed-map-responsive">
+            <div class="embed-map-responsive">
+                <div class="embed-map-container">
+                    <iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?q=Itanagar%2C%20Arunachal%20Pradesh%2C%20India&t=k&z=9&ie=UTF8&iwloc=B&output=embed"></iframe>
+                    <a href="https://embed-maps.org"
+                        style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden"></a>
+                </div>
+    </section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    <p>&copy; 2026 Arunachal Journeys | Designed with <span class="text-warning">❤️</span></p>
+
+    <!-- Social Links -->
+    <div class="social-links mt-3">
+        <a href="#" class="mx-2 text-warning"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-2 text-warning"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-2 text-warning"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-2 text-warning"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="mx-2 text-warning"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links mt-3">
+        <a href="#about" class="mx-2 text-light">About</a> |
+        <a href="#tours" class="mx-2 text-light">Tours</a> |
+        <a href="#gallery" class="mx-2 text-light">Gallery</a> |
+        <a href="#reservation" class="mx-2 text-light">Reservations</a> |
+        <a href="#contact" class="mx-2 text-light">Contact</a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="mt-3">
+        <p class="mb-1"><i class="fas fa-envelope"></i> info@arunachaljourneys.com</p>
+        <p class="mb-1"><i class="fas fa-phone"></i> +91-8448663586</p>
+        <p><i class="fas fa-map-marker-alt"></i> Itanagar, Arunachal Pradesh, India</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
