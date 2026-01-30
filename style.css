@@ -374,3 +374,9 @@ footer span {
 .notification.exit {
     animation: slideOut 0.3s ease-in forwards;
 }
+
+ .header-brand { display:flex; align-items:center; gap:12px; }
+      .header-brand .logo { height:40px; width:auto; display:block; }
+      .header-brand .site-title { margin:0; color:#ffc107; font-size:1.25rem; } /* matches text-warning */
+      /* Dropdown icon (smaller) */
+      .dropdown-logo { height:20px; width:auto; margin-right:8px; }
