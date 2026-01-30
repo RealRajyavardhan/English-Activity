@@ -375,49 +375,5 @@ footer span {
     animation: slideOut 0.3s ease-in forwards;
 }
 
-/* existing rules (keep) */
-  .header-brand { position:relative; display:flex; align-items:center; gap:12px; }
-  .header-brand .logo { height:40px; width:auto; display:block; }
-  .header-brand .site-title { margin:0; color:#ffc107; font-size:1.25rem; } /* matches text-warning */
-  /* Dropdown icon (smaller) */
-  .dropdown-logo { height:20px; width:auto; margin-right:8px; }
 
-  /* --- NEW: decorative background logo behind the header title --- */
-  .header-brand::before {
-    content: "";
-    position: absolute;
-    left: 0; /* adjust to move logo left/right */
-    top: 50%;
-    transform: translate(-10%, -50%) rotate(0deg); /* tweak translate/rotate as desired */
-    width: 220px;            /* visible size of the decorative logo */
-    height: 220px;           /* keep aspect by using background-size: contain */
-    background-image: url("logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    opacity: 0.06;           /* low opacity so it stays subtle behind text */
-    pointer-events: none;    /* makes it non-interactive */
-    z-index: 0;              /* behind the text */
-  }
-
-  /* ensure the visible elements sit above the decorative logo */
-  .header-brand > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* optional: darker header so logo shows nicely — only if you want a band */
-  header.navigation {
-    background-color: rgba(0,0,0,0.8); /* keeps the existing look but ensures contrast */
-  }
-
-  /* Responsive tweak: hide or reduce the decorative logo on small screens */
-  @media (max-width: 576px) {
-    .header-brand::before {
-      width: 120px;
-      height: 120px;
-      opacity: 0.04;
-      transform: translate(-20%, -50%) scale(0.9);
-    }
-  }
 
